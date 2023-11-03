@@ -223,7 +223,7 @@
 // console.log(numbers);
 
 // tegsh bolon eyreg toonuudiin niilber
-const numbers = [2, -3, 5, 6, -8, 10];
+// const numbers = [2, -3, 5, 6, -8, 10];
 // let sum = 0;
 // for (let i = 0; i < numbers.length; i++) {
 //   if (numbers[i] % 2 == 0 && numbers[i] > 0) {
@@ -240,3 +240,38 @@ const numbers = [2, -3, 5, 6, -8, 10];
 //   fib.push(fib[i] + fib[i - 1]);
 // }
 // console.log(fib);
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let insert = 3;
+// let emptyArr = [];
+
+// for (let i = 0; i < numbers.length / insert; i++) {
+//   emptyArr.push(numbers.slice(i * insert, i * insert + insert));
+// numbers.slice(0, 3)
+// emptyArr.slice(3, 6)
+// }
+
+// console.log(emptyArr);
+
+// const array = [1, 2, 4, 0, 34, 8];
+// for (let i = 1; i < array.length; i++) {
+//   for (let j = 0; j < array.length; j++) {
+//     if (array[i] > array[j]) {
+//       console.log();
+//     }
+//   }
+// }
+
+const nums = [5, 4, 8, 2, 1, 20];
+
+for (let i = 0; i < nums.length; i++) {
+  let reserve = 0;
+  for (let k = i + 1; k < nums.length; k++) {
+    if (nums[i] > nums[k]) {
+      reserve = nums[i];
+      nums[i] = nums[k];
+      nums[k] = reserve;
+    }
+  }
+}
+console.log(nums);
