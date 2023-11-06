@@ -254,7 +254,7 @@
 // console.log(emptyArr);
 
 // const array = [1, 2, 4, 0, 34, 8];
-// for (let i = 1; i < array.length; i++) {
+// for (let i = 1; i < array.length; i++) {`
 //   for (let j = 0; j < array.length; j++) {
 //     if (array[i] > array[j]) {
 //       console.log();
@@ -262,16 +262,215 @@
 //   }
 // }
 
-const nums = [5, 4, 8, 2, 1, 20];
+// const nums = [5, 4, 8, 2, 1, 20];
 
-for (let i = 0; i < nums.length; i++) {
-  let reserve = 0;
-  for (let k = i + 1; k < nums.length; k++) {
-    if (nums[i] > nums[k]) {
-      reserve = nums[i];
-      nums[i] = nums[k];
-      nums[k] = reserve;
-    }
-  }
-}
-console.log(nums);
+// for (let i = 0; i < nums.length; i++) {
+//   let reserve = 0;
+//   for (let k = i + 1; k < nums.length; k++) {
+//     if (nums[i] > nums[k]) {
+//       reserve = nums[i];
+//       nums[i] = nums[k];
+//       nums[k] = reserve;
+//     }
+//   }
+// }
+// console.log(nums);
+
+const data = [
+  {
+    productName: "Bakery",
+    unitPrice: 5000,
+    amount: 200,
+    totalPrice: 500000,
+    casherld: 1,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Bread",
+    unitPrice: 1000,
+    amount: 100,
+    totalPrice: 100000,
+    casherld: 2,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Vegitables",
+    unitPrice: 6000,
+    amount: 300,
+    totalPrice: 1800000,
+    casherld: 3,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Noodle",
+    unitPrice: 600,
+    amount: 1000,
+    totalPrice: 600000,
+    casherld: 1,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Tea",
+    unitPrice: 100,
+    amount: 500,
+    totalPrice: 10000,
+    casherld: 3,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Soda",
+    unitPrice: 500,
+    amount: 1000,
+    totalPrice: 500000,
+    casherld: 3,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Soda",
+    unitPrice: 500,
+    amount: 1000,
+    totalPrice: 500000,
+    casherld: 2,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Flour",
+    unitPrice: 200,
+    amount: 700,
+    totalPrice: 1400000,
+    casherld: 5,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Rice",
+    unitPrice: 450,
+    amount: 200,
+    totalPrice: 900000,
+    casherld: 5,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Meat",
+    unitPrice: 1500,
+    amount: 200,
+    totalPrice: 300000,
+    casherld: 5,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Pickles",
+    unitPrice: 150,
+    amount: 1000,
+    totalPrice: 150000,
+    casherld: 1,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Flour",
+    unitPrice: 200,
+    amount: 700,
+    totalPrice: 1400000,
+    casherld: 5,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Oil",
+    unitPrice: 2500,
+    amount: 100,
+    totalPrice: 250000,
+    casherld: 2,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Salt",
+    unitPrice: 50,
+    amount: 2000,
+    totalPrice: 10000,
+    casherld: 3,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Sugar",
+    unitPrice: 100,
+    amount: 3000,
+    totalPrice: 30000,
+    casherld: 4,
+    date: "2022-11-01",
+  },
+  {
+    productName: "BottleWater",
+    unitPrice: 100,
+    amount: 10000,
+    totalPrice: 100000,
+    casherld: 5,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Cookies",
+    unitPrice: 30,
+    amount: 10000,
+    totalPrice: 300000,
+    casherld: 2,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Candy",
+    unitPrice: 10,
+    amount: 20000,
+    totalPrice: 200000,
+    casherld: 3,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Gas",
+    unitPrice: 1500,
+    amount: 2000,
+    totalPrice: 300000,
+    casherld: 4,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Beer",
+    unitPrice: 4500,
+    amount: 20000,
+    totalPrice: 900000,
+    casherld: 5,
+    date: "2022-11-01",
+  },
+];
+
+// console.log(data);
+
+// var totalPrice = totalPrice++;
+// console.log(sum);
+
+// console.log("data", data[2].totalPrice);
+// console.log("data", data[3].totalPrice);
+// console.log("data", data[4].totalPrice);
+// console.log("data", data[5].totalPrice);
+
+// Нийт борлуулалтын дүнг тооцоолох.
+// let sum = 0;
+// for (let i = 0; i < data.length; i++) {
+//   sum = sum + data[i].totalPrice;
+// }
+// console.log("Нийт борлуулалтын дүнг", sum);
+
+//Нийт борлуулагдсан барааны тоог тооцоолох.
+// let sum = 0;
+// for (let i = 0; i < data.length; i++) {
+//   sum = sum + data[i].amount;
+// }
+// console.log("Нийт барааны тоог", sum);
+
+//Хамгийн их зарагдсан 5 барааны жагсаалт /боруулалтын үнийн дүнгээр/ харуулах.
+
+var monst5soldProduct = 0;
+
+//4. Хамгийн их зарагдсан 5 барааны жагсаалт /боруулалтын тоо хэмжээгэр/ харуулах.
+// 5. Хамгийн бага зарагдсан 5 барааны жагсаалт /боруулалтын үнийн дүнгээр/ харуулах.
+// 6. Хамгийн бага зарагдсан 5 барааны жагсаалт /боруулалтын тоо хэмжээгээр/ харуулах.
+// 7. Хамгийн их зарагдсан /боруулалтын үнийн дүнгээр/ 10 барааны боруулалтын үнийн дүнгийн нийт боруулалтанд эзлэх хувь харуулах.
+// 8. Хамгийн их зарагдсан /боруулалтын тоо хэмжээгээр/ 5 барааны тоо хэмжээ нийт барааны тоо хэмжээнд эзлэх хувь харуулах.
+// 9. Хамгийн бага зарагдсан /боруулалтын үнийн дүнгээр/ 5 барааны боруулалтын үнийн дүнгийн нийт боруулалтанд эзлэх хувь харуулах.
+// 10. Хамгийн бага зарагдсан /боруулалтын тоо хэмжээгээр/ 5 барааны тоо хэмжээ нийт барааны тоо хэмжээнд эзлэх хувь харуулах.
