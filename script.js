@@ -465,7 +465,21 @@ const data = [
 
 //Хамгийн их зарагдсан 5 барааны жагсаалт /боруулалтын үнийн дүнгээр/ харуулах.
 
-var monst5soldProduct = 0;
+// var monst5soldProduct = 0;
+// for (let i = 0; i < data.length; i++) {
+//   for (let j = i; j < data.length; j++)
+//     if (data[i].totalPrice > data[j].totalPrice) {
+//       var x = data[i].totalPrice;
+//       data[i].totalPrice = data[j].totalPrice;
+
+//       data[j] = x;
+//     }
+// }
+// console.log(data[0].totalPrice);
+// console.log(data[1].totalPrice);
+// console.log(data[2].totalPrice);
+// console.log(data[3].totalPrice);
+// console.log(data[4].totalPrice);
 
 //4. Хамгийн их зарагдсан 5 барааны жагсаалт /боруулалтын тоо хэмжээгэр/ харуулах.
 // 5. Хамгийн бага зарагдсан 5 барааны жагсаалт /боруулалтын үнийн дүнгээр/ харуулах.
@@ -474,3 +488,47 @@ var monst5soldProduct = 0;
 // 8. Хамгийн их зарагдсан /боруулалтын тоо хэмжээгээр/ 5 барааны тоо хэмжээ нийт барааны тоо хэмжээнд эзлэх хувь харуулах.
 // 9. Хамгийн бага зарагдсан /боруулалтын үнийн дүнгээр/ 5 барааны боруулалтын үнийн дүнгийн нийт боруулалтанд эзлэх хувь харуулах.
 // 10. Хамгийн бага зарагдсан /боруулалтын тоо хэмжээгээр/ 5 барааны тоо хэмжээ нийт барааны тоо хэмжээнд эзлэх хувь харуулах.
+
+// let cars = [];
+// const payPerHour = 1000;
+// const payFirstThirtyMinutes = 0;
+
+// const formatDate = (date) => {
+//   var hours = date.getHours();
+//   var minutes = date.getMinutes();
+// };
+
+// console.log("2023-07-10, 13:15:00");
+// const date = new Date("2023-11-01T12:15:00");
+// // console.log("date", new Date("2015-03-25T12:00:00Z"));
+// console.log("hours", date.getHours());
+// console.log("minutes", date.getMinutes());
+
+// let startinsert = new Date("October 21, 2023 13:15:00");
+// let finishinsert = new Date("October 21, 2023 14:45:30");
+// let starthour = startinsert.getHours();
+// let startminutes = startinsert.getMinutes();
+// let finishhour = finishinsert.getHours();
+// let finishminutes = finishinsert.getMinutes();
+// let startseconds = startinsert.getSeconds();
+// let finishseconds = finishinsert.getSeconds();
+// let durationminutes =
+//   (finishhour - starthour) * 60 +
+//   (finishminutes - startminutes) +
+//   (finishseconds - startseconds) / 60;
+
+// function payment(x) {
+//   if (x % 60 <= 30) {
+//     return Math.floor(x / 60) * 1000;
+//   } else {
+//     return (Math.floor(x / 60) + 1) * 1000;
+//   }
+// }
+
+// console.log(payment(durationminutes));
+
+const numbers = [15.5, 2.3, 1.1, 4.7];
+function getSum(total, num) {
+  return total + Math.round(num);
+  console.log(getSum);
+}
