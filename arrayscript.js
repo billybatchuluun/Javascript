@@ -29,7 +29,7 @@
 // }
 // console.log(sum);
 
-//Массив доторх хамгийн их нийлбэртэй дэд массивыг ол
+// Массив доторх хамгийн их нийлбэртэй дэд массивыг ол
 
 // let numbers = [1, -2, 3, 4, -1, 2, 1, -5, 4];
 // let dedmasivNumber = 0;
@@ -41,9 +41,37 @@
 // }
 // console.log(maxNumbers);
 
-// let numbers = [2, 4, 5, 6, 7];
-let a = 4;
-let b = 9;
-let c = 22;
-let maxNumber = Math.max(a, b, c);
-console.log(maxNumber);
+//Өгөгдсөн 3x3 хүснэгтийн бүх мөр, багана, диагниалуудын нийлбэр тэнцүү байна уу гэдгийг шалгах
+
+// var num = [
+//   [2, 7, 6],
+//   [9, 5, 1],
+//   [4, 3, 8],
+// ];
+// let sum = 0;
+// for (i = 0; i < num[3].length; i++) {
+//   sum = sum + num[i];
+// }
+// console.log(sum);
+// for (j=0; j>[])
+
+const num = [
+  [2, 3, 4],
+  [4, 3, 4],
+  [6, 9, 12],
+];
+
+let sum = 0;
+for (let i = 0; i < num[[0][2]]; i++) {
+  sum += num[i];
+  //   for (let j = 0; j < num.length; j++) {
+  //     sum = sum + num[j];
+}
+
+console.log(sum);
+
+// sum = sum + num[i];
+// }
+// console.log(sum);
+// console.log(num[i][j]);
+// console.log(num[0], [3].length);
